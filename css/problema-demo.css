@@ -1,0 +1,519 @@
+
+
+
+*{
+    margin:0;
+    padding:0;
+}
+
+:root {
+    --back-color1:rgba(255, 71, 71, 0.638);
+    --back-color2:#E7E1D5;
+    --back-color3:#ddadb3ee;
+    --menu-color: #174950;
+    --font-color1:#E7E1D5;
+    --font-color2:white;
+    --color-text:linear-gradient(to right, black,white);
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+
+
+#header{
+   
+    box-sizing:border-box;
+    height:90px;
+    padding:1rem;
+    display:flex;
+    justify-content: space-between;
+    background-color:var(--menu-color);
+    width:100%;
+    z-index: 10;
+}
+
+#logo{
+    font-size:1.5rem;
+    font-weight:bold;
+    margin-top:12px;
+ }
+
+ a {
+    text-decoration:none;
+    color:var(--font-color1);
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size:20px;
+  }
+  /* hover do menunav */
+  a:hover{
+     
+      color:rgba(207, 207, 37, 0.686);
+      font-weight:bold;
+   
+      
+  
+  }
+  /* ul */
+  .nav_ul{
+      display:flex;
+      list-style:none;
+      gap:2rem;
+      margin-top:12px;
+  }
+  /* elementos da ul */
+  .nav_ul a{
+      display:block;
+      gap:2rem;
+  }
+
+  #problema {
+    background-color:#edc10082;
+    width:100%;
+    height:600px;
+    margin-top:-99px;
+}
+#identificar_titulo {
+    margin-top:100px;
+    margin-left:500px;
+    color:rgba(0, 0, 0, 0.826);
+    font-family: arial;
+    font-size:40px;
+    padding-top:50px;
+}
+
+.identificar_problema {
+    margin-top:50px;
+    margin-left:240px;
+    color:rgba(0, 0, 0, 0.793);
+    font-size:20px;
+    font-family:arial;
+    text-align: justify;
+    width:1000px;
+    gap:2rem;
+}
+
+#grafico {
+    background-color: #6D7179;
+    width:100%;
+    height:700px;
+    margin-top:-50px;
+}
+
+#grafico h1 {
+    color:#E7E1D5;
+    font-family:arial;
+    font-weight:bold;
+    font-size:25px; 
+    margin-left:350px;
+    padding-top:70px;
+}
+
+#grafico p {
+    color:#E7E1D5;
+    font-family:arial;
+    margin-left:400px;
+    font-size:20px; 
+    margin-top:40px;
+    margin-left:400px;
+}
+
+.img {
+    border-radius:15px;
+    margin-left:450px;
+    margin-top:50px;
+}
+
+/* demosntração da solução estilo */
+
+#solucao {
+    width:100%;
+    height:700px;
+    background-color: #A6C871;
+
+}
+#solucao h1{
+    padding-top: 60px;
+    padding-left: 450px;
+    font-family:arial;
+    font-weight: bold;
+    
+}
+.parte1 {
+     margin-top:50px;
+     width:1000px;
+     text-align: justify;
+     font-family: arial;
+     gap:2rem;
+     font-size:18px;
+     margin-left:250px;
+}
+
+.parte2 {
+     margin-top:20px;
+     width:1000px;
+     text-align:justify;
+     font-family:arial;
+     gap:2rem;
+     font-size:18px;
+     margin-left:250px;
+}
+
+#solucao_exemplo {
+    background-color: rgba(0, 128, 128, 0.801);
+    width:100%;
+    height:2000px;
+}
+
+.titulo2{
+    margin-left:600px;
+    padding-top:100px;
+    font-family: arial;
+    font-size:25px;
+}
+
+#solucao_exemplo img {
+    border-radius: 20px;
+    border-top-right-radius: 20px;
+    border-top-left-radius:20px;
+    width:600px;
+    height:400px;
+    
+    padding-top:100px;
+}
+
+.passo1 {
+    font-family:arial;
+    color:#E7E1D5;
+    font-size:20px;
+    padding-left:50px;
+    width:600px;
+    text-align:justify;
+    padding-top:50px;
+
+}
+
+.passo2 {
+    font-family: arial;
+    color:#E7E1D5;
+    font-size:20px;
+    width:600px;
+    text-align:justify;
+    padding-left:50px;
+    padding-top:20px;
+}
+
+.passo3 {
+    padding-top:50px;
+    font-family: arial;
+    color:#E7E1D5;
+    font-size:20px;
+    width:600px;
+    text-align:justify;
+    padding-left:50px;
+
+}
+
+.passo4 {
+    padding-top:50px;
+    font-family: arial;
+    color:#E7E1D5;
+    font-size:20px;
+    width:600px;
+    text-align:justify;
+    padding-left:750px;
+    position:relative;
+    bottom:539px;
+
+}
+
+.passo5 {
+    
+    font-family: arial;
+    color:#E7E1D5;
+    font-size:20px;
+    width:600px;
+    text-align:justify;
+    padding-left:450px;
+    position:relative;
+    bottom:450px;
+}
+
+.passo6 {
+    
+    font-family: arial;
+    color:#E7E1D5;
+    font-size:20px;
+    width:600px;
+    text-align:justify;
+    padding-left:450px;
+    position:relative;
+    bottom:400px;
+}
+
+
+
+/* responsividade mobile */
+@media screen and (min-width:0px) and (max-width:600px){
+      #header {
+        height:180px;
+      }
+
+      #logo{
+        width:200px;
+        padding-left:110px;
+        
+      }
+
+      .nav_ul {
+        margin-top: 90px;
+        font-size: 10px;
+        margin-left: -460px;
+        gap:1rem;
+        position: absolute;
+        
+       }
+
+       #problema {
+        height:1000px;
+       }
+
+       #identificar_titulo{
+        width:500px;
+        margin-left:-10px;
+        padding-left:70px;
+        font-size:30px;
+       }
+
+   #problema p {
+    width:380px;
+    position: relative;
+    right:190px;
+   }
+
+
+
+   #grafico {
+    height:800px;
+   }
+
+   #grafico h1 {
+    width:300px;
+    position: relative;
+    right:250px;
+   }
+
+   #grafico p{
+    width:400px;
+    position: relative;
+    right:350px;
+
+   }
+
+
+   #grafico img {
+    position:relative;
+    right:410px;
+    width:400px;
+    height:300px;
+   }
+   
+   #solucao {
+    height:1500px;
+  
+   }
+
+   #solucao h1{
+    position:relative;
+    right:380px;
+    width:400px;
+   }
+
+   .titulo2{
+    margin-left:100px;
+    padding-top:100px;
+    font-family: arial;
+    font-size:25px;
+   }
+
+   .parte1 {
+    width:350px;
+    position:relative;
+    right:180px;
+   }
+
+   .parte2 {
+    width:350px;
+    position:relative;
+    right:180px;
+   }
+
+   #solucao_exemplo {
+    height:4000px;
+   }
+
+   #solucao_exemplo img {
+    width:250px;
+    height:150px;
+    position:relative;
+    border-radius:5px;
+    right:330px;
+    bottom:60px;
+}
+ .passo1 {
+    width:365px;
+ }
+ .passo2 {
+    width:365px;
+ }
+ .passo3 {
+    width:365px;
+ }
+ .passo4 {
+    width:365px;
+    position:relative;
+    right:700px;
+    top:50px;
+ }
+ .passo5 {
+    width:365px;
+    margin-top: 550px;
+    margin-left: -400px;
+ }
+ .passo6 {
+    width:365px;
+    margin-left: -400px;
+    margin-top:50px;
+ }
+
+ 
+
+}
+ /* responsividade tablet */
+@media screen and (min-width:601px) and (max-width:1024px){
+    #header {
+        height: 200px;
+       }
+    
+       #logo{
+         width:200px;
+         padding-left:190px;
+         
+       }
+    
+       .nav_ul {
+        margin-top: 90px;
+        font-size: 8px;
+        margin-left: -580px;
+        gap:1rem;
+        position: absolute;
+        
+       }
+
+
+
+       #identificar_titulo {
+        width:600px;
+        position:relative;
+        right:430px;
+       }
+
+       .identificar_problema{
+        width:450px;
+        position:relative;
+        right:160px;
+       }
+
+       #problema {
+        height:1000px;
+       }
+
+
+       #grafico {
+        height:1000px;
+       }
+
+       #grafico h1 {
+        width:400px;
+        position:relative;
+        right:220px;
+       }
+
+       #grafico p{
+        position:relative;
+        right:270px;
+        width:400px;
+       }
+
+       #grafico img {
+       position:relative;
+       right:410px;
+       }
+
+        #solucao{
+        height:1500px;
+        }
+       #solucao h1 {
+        position:relative;
+        right:420px;
+        width:600px;
+       }
+
+       #solucao p {
+        width:400px;
+        position:relative;
+        right:150px;
+       }
+       #solucao_exemplo{
+        height:3000px;
+       }
+
+       .titulo2{
+        position:relative;
+        right:400px;
+        width:300px;
+       }
+       #solucao_exemplo img {
+
+        position:relative;
+        right:350px;
+        width:400px;
+        height:300px;
+       }
+
+       .passo1 {
+        width:400px;
+        position:relative;
+        left:50px;
+       }
+       .passo2 {
+        width:400px;
+        position:relative;
+        left:50px;
+       }
+       .passo3 {
+        width:400px;
+        position:relative;
+        left:50px;
+       }
+       .passo4 {
+        width:400px;
+        position:relative;
+        top:50px;
+        right:650px;
+       }
+       .passo5 {
+        position:relative;
+        top:200px;
+        right:350px;
+        width:400px;
+       }
+       .passo6 {
+        position:relative;
+        top:250px;
+        right:350px;
+        width:400px;
+       }
+    }
